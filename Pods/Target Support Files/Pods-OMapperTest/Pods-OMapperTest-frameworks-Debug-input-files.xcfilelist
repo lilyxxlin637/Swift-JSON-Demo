@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-OMapperTest/Pods-OMapperTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework
+${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework

@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3543CEFD22E8668500C74CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CEFC22E8668500C74CB9 /* AppDelegate.swift */; };
+		3543CEFF22E8668500C74CB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CEFE22E8668500C74CB9 /* ViewController.swift */; };
+		3543CF0222E8668500C74CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0022E8668500C74CB9 /* Main.storyboard */; };
+		3543CF0422E8668600C74CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0322E8668600C74CB9 /* Assets.xcassets */; };
+		3543CF0722E8668600C74CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0522E8668600C74CB9 /* LaunchScreen.storyboard */; };
+		3543CF1222E8668600C74CB9 /* OMapperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */; };
+		3543CF1D22E8668600C74CB9 /* OMapperTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */; };
+		9238F43811B27D7AB596E675 /* Pods_OMapperTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033CBFAA1AF3451AD66B8867 /* Pods_OMapperTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3543CF0E22E8668600C74CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3543CEF122E8668500C74CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3543CEF822E8668500C74CB9;
+			remoteInfo = OMapperTest;
+		};
+		3543CF1922E8668600C74CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3543CEF122E8668500C74CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3543CEF822E8668500C74CB9;
+			remoteInfo = OMapperTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033CBFAA1AF3451AD66B8867 /* Pods_OMapperTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMapperTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3543CEF922E8668500C74CB9 /* OMapperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMapperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3543CEFC22E8668500C74CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3543CEFE22E8668500C74CB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3543CF0122E8668500C74CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3543CF0322E8668600C74CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3543CF0622E8668600C74CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3543CF0822E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3543CF0D22E8668600C74CB9 /* OMapperTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMapperTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMapperTestTests.swift; sourceTree = "<group>"; };
+		3543CF1322E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3543CF1822E8668600C74CB9 /* OMapperTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMapperTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMapperTestUITests.swift; sourceTree = "<group>"; };
+		3543CF1E22E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2EFCE87272E94CC0165464 /* Pods-OMapperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMapperTest.debug.xcconfig"; path = "Target Support Files/Pods-OMapperTest/Pods-OMapperTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A929FDC61EE4940F3EDA95 /* Pods-OMapperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMapperTest.release.xcconfig"; path = "Target Support Files/Pods-OMapperTest/Pods-OMapperTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3543CEF622E8668500C74CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9238F43811B27D7AB596E675 /* Pods_OMapperTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF0A22E8668600C74CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF1522E8668600C74CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32AF0DD0B68FC19D16812391 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE2EFCE87272E94CC0165464 /* Pods-OMapperTest.debug.xcconfig */,
+				F5A929FDC61EE4940F3EDA95 /* Pods-OMapperTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3543CEF022E8668500C74CB9 = {
+			isa = PBXGroup;
+			children = (
+				3543CEFB22E8668500C74CB9 /* OMapperTest */,
+				3543CF1022E8668600C74CB9 /* OMapperTestTests */,
+				3543CF1B22E8668600C74CB9 /* OMapperTestUITests */,
+				3543CEFA22E8668500C74CB9 /* Products */,
+				32AF0DD0B68FC19D16812391 /* Pods */,
+				F9406053C25B379D6B0CC57B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3543CEFA22E8668500C74CB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3543CEF922E8668500C74CB9 /* OMapperTest.app */,
+				3543CF0D22E8668600C74CB9 /* OMapperTestTests.xctest */,
+				3543CF1822E8668600C74CB9 /* OMapperTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3543CEFB22E8668500C74CB9 /* OMapperTest */ = {
+			isa = PBXGroup;
+			children = (
+				3543CEFC22E8668500C74CB9 /* AppDelegate.swift */,
+				3543CEFE22E8668500C74CB9 /* ViewController.swift */,
+				3543CF0022E8668500C74CB9 /* Main.storyboard */,
+				3543CF0322E8668600C74CB9 /* Assets.xcassets */,
+				3543CF0522E8668600C74CB9 /* LaunchScreen.storyboard */,
+				3543CF0822E8668600C74CB9 /* Info.plist */,
+			);
+			path = OMapperTest;
+			sourceTree = "<group>";
+		};
+		3543CF1022E8668600C74CB9 /* OMapperTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */,
+				3543CF1322E8668600C74CB9 /* Info.plist */,
+			);
+			path = OMapperTestTests;
+			sourceTree = "<group>";
+		};
+		3543CF1B22E8668600C74CB9 /* OMapperTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */,
+				3543CF1E22E8668600C74CB9 /* Info.plist */,
+			);
+			path = OMapperTestUITests;
+			sourceTree = "<group>";
+		};
+		F9406053C25B379D6B0CC57B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033CBFAA1AF3451AD66B8867 /* Pods_OMapperTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3543CEF822E8668500C74CB9 /* OMapperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3543CF2122E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTest" */;
+			buildPhases = (
+				8E62A7ACA7D7107709A2CD6F /* [CP] Check Pods Manifest.lock */,
+				3543CEF522E8668500C74CB9 /* Sources */,
+				3543CEF622E8668500C74CB9 /* Frameworks */,
+				3543CEF722E8668500C74CB9 /* Resources */,
+				3378E0947508AE36D4ECF613 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OMapperTest;
+			productName = OMapperTest;
+			productReference = 3543CEF922E8668500C74CB9 /* OMapperTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3543CF0C22E8668600C74CB9 /* OMapperTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3543CF2422E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTestTests" */;
+			buildPhases = (
+				3543CF0922E8668600C74CB9 /* Sources */,
+				3543CF0A22E8668600C74CB9 /* Frameworks */,
+				3543CF0B22E8668600C74CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3543CF0F22E8668600C74CB9 /* PBXTargetDependency */,
+			);
+			name = OMapperTestTests;
+			productName = OMapperTestTests;
+			productReference = 3543CF0D22E8668600C74CB9 /* OMapperTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3543CF1722E8668600C74CB9 /* OMapperTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3543CF2722E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTestUITests" */;
+			buildPhases = (
+				3543CF1422E8668600C74CB9 /* Sources */,
+				3543CF1522E8668600C74CB9 /* Frameworks */,
+				3543CF1622E8668600C74CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3543CF1A22E8668600C74CB9 /* PBXTargetDependency */,
+			);
+			name = OMapperTestUITests;
+			productName = OMapperTestUITests;
+			productReference = 3543CF1822E8668600C74CB9 /* OMapperTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3543CEF122E8668500C74CB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = oyo;
+				TargetAttributes = {
+					3543CEF822E8668500C74CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					3543CF0C22E8668600C74CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3543CEF822E8668500C74CB9;
+					};
+					3543CF1722E8668600C74CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 3543CEF822E8668500C74CB9;
+					};
+				};
+			};
+			buildConfigurationList = 3543CEF422E8668500C74CB9 /* Build configuration list for PBXProject "OMapperTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3543CEF022E8668500C74CB9;
+			productRefGroup = 3543CEFA22E8668500C74CB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3543CEF822E8668500C74CB9 /* OMapperTest */,
+				3543CF0C22E8668600C74CB9 /* OMapperTestTests */,
+				3543CF1722E8668600C74CB9 /* OMapperTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3543CEF722E8668500C74CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3543CF0722E8668600C74CB9 /* LaunchScreen.storyboard in Resources */,
+				3543CF0422E8668600C74CB9 /* Assets.xcassets in Resources */,
+				3543CF0222E8668500C74CB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF0B22E8668600C74CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF1622E8668600C74CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3378E0947508AE36D4ECF613 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMapperTest/Pods-OMapperTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OMapperTest/Pods-OMapperTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OMapperTest/Pods-OMapperTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E62A7ACA7D7107709A2CD6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OMapperTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3543CEF522E8668500C74CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3543CEFF22E8668500C74CB9 /* ViewController.swift in Sources */,
+				3543CEFD22E8668500C74CB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF0922E8668600C74CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3543CF1222E8668600C74CB9 /* OMapperTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3543CF1422E8668600C74CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3543CF1D22E8668600C74CB9 /* OMapperTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3543CF0F22E8668600C74CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3543CEF822E8668500C74CB9 /* OMapperTest */;
+			targetProxy = 3543CF0E22E8668600C74CB9 /* PBXContainerItemProxy */;
+		};
+		3543CF1A22E8668600C74CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3543CEF822E8668500C74CB9 /* OMapperTest */;
+			targetProxy = 3543CF1922E8668600C74CB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3543CF0022E8668500C74CB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3543CF0122E8668500C74CB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3543CF0522E8668600C74CB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3543CF0622E8668600C74CB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3543CF1F22E8668600C74CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3543CF2022E8668600C74CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3543CF2222E8668600C74CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2EFCE87272E94CC0165464 /* Pods-OMapperTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3543CF2322E8668600C74CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A929FDC61EE4940F3EDA95 /* Pods-OMapperTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3543CF2522E8668600C74CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMapperTest.app/OMapperTest";
+			};
+			name = Debug;
+		};
+		3543CF2622E8668600C74CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OMapperTest.app/OMapperTest";
+			};
+			name = Release;
+		};
+		3543CF2822E8668600C74CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMapperTest;
+			};
+			name = Debug;
+		};
+		3543CF2922E8668600C74CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OMapperTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = loyo.OMapperTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OMapperTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3543CEF422E8668500C74CB9 /* Build configuration list for PBXProject "OMapperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3543CF1F22E8668600C74CB9 /* Debug */,
+				3543CF2022E8668600C74CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3543CF2122E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3543CF2222E8668600C74CB9 /* Debug */,
+				3543CF2322E8668600C74CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3543CF2422E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3543CF2522E8668600C74CB9 /* Debug */,
+				3543CF2622E8668600C74CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3543CF2722E8668600C74CB9 /* Build configuration list for PBXNativeTarget "OMapperTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3543CF2822E8668600C74CB9 /* Debug */,
+				3543CF2922E8668600C74CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3543CEF122E8668500C74CB9 /* Project object */;
+}
