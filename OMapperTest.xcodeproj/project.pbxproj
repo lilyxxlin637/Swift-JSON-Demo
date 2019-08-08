@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,7 +85,6 @@
 				BE2EFCE87272E94CC0165464 /* Pods-OMapperTest.debug.xcconfig */,
 				F5A929FDC61EE4940F3EDA95 /* Pods-OMapperTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

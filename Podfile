@@ -8,7 +8,6 @@ target 'OMapperTest' do
   # Pods for OMapperTest
     pod 'ObjectMapper', '~> 3.4'
     pod 'HandyJSON', '~> 5.0.0'
-  # pod 'IBAnimatable'
-  # pod "Macaw", "0.9.5"
+    pod 'Alamofire'
 
 end

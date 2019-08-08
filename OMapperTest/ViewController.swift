@@ -11,65 +11,88 @@ import ObjectMapper
 
 //import HandyJSON
 
+let jsonString = "{\"name\":\"lily\",\"age\":21,\"friends\":[{\"gender\":\"G\",\"friendsName\":\"Andy\"},{\"friendsName\":\"frank\",\"gender\":\"B\"}]}"
 
 class ViewController: UIViewController {
-    let user = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let json = user.toJSON()
-        print(json)
-        
-        let string : [String : Any?] = ["name": "lily", "age": nil]
-        let specialUser = SpecialUser(JSON: string)
-        specialUser?.printInfo()
-//        let user = User(JSON: string)
-//        user?.printInfo()
-//        print("~~~~~~~~~~~")
-//        print(user?.toJSON())
+        let user = User(JSONString: jsonString)
+
+        let user1 = User()
+        print(user1.toJSONString(prettyPrint: false))
     }
 }
 
 
 class User: Mappable{
-    var name: String?
-    var ageID: Int = 3
-    
-    let stringTransform = TransformOf<String,String>(fromJSON: { (value: String?) -> String in
-        if let value = value {
-            return String(value)
+    var userName: String? = "oyo"
+    var userAge: Int = 3
+    var friends = [Friends]()
+
+    required init?(map: Map) {
+        if map.JSON["name"] == nil{
+            return nil
         }
-        return ""
-    }, toJSON: { (value: String?) -> String in
-        if let value = value {return String(value)}
-        return ""
-    })
+    }
     
     init(){
-        ageID = 4
-        name = "oyo"
+        self.friends = [Friends(),Friends()]
     }
-    
-    required init?(map: Map) {
-        //
-    }
-    
+
     func mapping(map: Map) {
-        name    <- (map["name"], stringTransform)
-        ageID   <- map["age"]
+        userName    <- map["name"]
+        userAge     <- map["age"]
+        friends     <- map["friends"]
     }
-    
-    func printInfo(){
-        print(ageID)
-        print(name)
-    }
-    
+
+
     func doSomethingWithString(){
-//        print(self.name + self.id)
+//        print("name: \(self.userName)  age: \(self.userAge)")
     }
 }
 
-class SpecialUser: User{
-    
+enum Gender{
+    case male
+    case female
+    case unknown
+}
+
+class Friends: Mappable{
+    var name: String! = "friend1"
+    var gender: Gender! = .female
+
+    required init?(map: Map) {
+    }
+    init(){
+    }
+
+    func mapping(map: Map) {
+        name    <-  map["friendsName"]
+        gender  <- (map["gender"], genderTransform)
+    }
+
+    let genderTransform = TransformOf<Gender,String>(fromJSON: { (value: String?) -> Gender in
+        if let value = value {
+            if value == "G"{
+                return Gender.female
+            }
+            if value == "B"{
+                return Gender.female
+            }
+        }
+        return Gender.unknown
+    }, toJSON: { (value: Gender?) -> String in
+        if let value = value {
+            if value == Gender.female{
+                return "G"
+            }
+            if value == Gender.male{
+                return "B"
+            }
+            return ""
+        }
+        return ""
+    })
 }
 
