@@ -12,8 +12,6 @@
 		3543CF0222E8668500C74CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0022E8668500C74CB9 /* Main.storyboard */; };
 		3543CF0422E8668600C74CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0322E8668600C74CB9 /* Assets.xcassets */; };
 		3543CF0722E8668600C74CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3543CF0522E8668600C74CB9 /* LaunchScreen.storyboard */; };
-		3543CF1222E8668600C74CB9 /* OMapperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */; };
-		3543CF1D22E8668600C74CB9 /* OMapperTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */; };
 		9238F43811B27D7AB596E675 /* Pods_OMapperTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033CBFAA1AF3451AD66B8867 /* Pods_OMapperTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,11 +42,7 @@
 		3543CF0622E8668600C74CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3543CF0822E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3543CF0D22E8668600C74CB9 /* OMapperTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMapperTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMapperTestTests.swift; sourceTree = "<group>"; };
-		3543CF1322E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3543CF1822E8668600C74CB9 /* OMapperTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMapperTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMapperTestUITests.swift; sourceTree = "<group>"; };
-		3543CF1E22E8668600C74CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2EFCE87272E94CC0165464 /* Pods-OMapperTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMapperTest.debug.xcconfig"; path = "Target Support Files/Pods-OMapperTest/Pods-OMapperTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A929FDC61EE4940F3EDA95 /* Pods-OMapperTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMapperTest.release.xcconfig"; path = "Target Support Files/Pods-OMapperTest/Pods-OMapperTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				3543CEFB22E8668500C74CB9 /* OMapperTest */,
-				3543CF1022E8668600C74CB9 /* OMapperTestTests */,
-				3543CF1B22E8668600C74CB9 /* OMapperTestUITests */,
 				3543CEFA22E8668500C74CB9 /* Products */,
 				32AF0DD0B68FC19D16812391 /* Pods */,
 				F9406053C25B379D6B0CC57B /* Frameworks */,
@@ -121,24 +113,6 @@
 				3543CF0822E8668600C74CB9 /* Info.plist */,
 			);
 			path = OMapperTest;
-			sourceTree = "<group>";
-		};
-		3543CF1022E8668600C74CB9 /* OMapperTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				3543CF1122E8668600C74CB9 /* OMapperTestTests.swift */,
-				3543CF1322E8668600C74CB9 /* Info.plist */,
-			);
-			path = OMapperTestTests;
-			sourceTree = "<group>";
-		};
-		3543CF1B22E8668600C74CB9 /* OMapperTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3543CF1C22E8668600C74CB9 /* OMapperTestUITests.swift */,
-				3543CF1E22E8668600C74CB9 /* Info.plist */,
-			);
-			path = OMapperTestUITests;
 			sourceTree = "<group>";
 		};
 		F9406053C25B379D6B0CC57B /* Frameworks */ = {
@@ -333,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3543CF1222E8668600C74CB9 /* OMapperTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +314,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3543CF1D22E8668600C74CB9 /* OMapperTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
