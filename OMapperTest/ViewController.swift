@@ -11,7 +11,11 @@ import ObjectMapper
 
 let jsonString = "{\"name\":{\"firstname:\":\"lily\"},\"age\":21,\"friends\":[{\"gender\":\"G\",\"friendsName\":\"Andy\"},{\"friendsName\":\"frank\",\"gender\":\"B\"}]}"
 
+//name is nil
 let jsonStringNil = "{\"name\":,\"age\":21,\"friends\":[{\"gender\":\"G\",\"friendsName\":\"Andy\"},{\"friendsName\":\"frank\",\"gender\":\"B\"}]}"
+
+//age is string not an int as wished
+let jsonStringInt =  "{\"name\":{\"firstname:\":\"lily\"},\"age\":\"21\",\"friends\":[{\"gender\":\"G\",\"friendsName\":\"Andy\"},{\"friendsName\":\"frank\",\"gender\":\"B\"}]}"
 
 let playerJsonString = "{\"name\":\"lily\",\"age\":21,\"friends\":[{\"gender\":\"G\",\"friendsName\":\"Andy\"},{\"friendsName\":\"frank\",\"gender\":\"B\"}]}"
 
@@ -19,17 +23,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = User(JSONString: jsonString) //jsonStringNil)
         
+        //mappalbe
+        let user = User(JSONString: jsonString) //jsonStringNil)
+        print("user name: (expected lily)")
         print(user?.userName as Any)
         
-        let user1 = User()
-        print(user1.toJSON())
+        let user1 = User(JSONString: jsonStringInt)
+        //if mismatch type, result in unexpected value
+        print("\nuser age: (expected 21)(error demo)")
+        print(user1?.userAge as Any)
         
+        let user2 = User()
+        print("\nJSON of user2")
+        print(user2.toJSON())
+        
+        //immutable
         let player = try? Player(JSONString: playerJsonString)
+        print("\nJSON of player")
         print(player?.toJSON() as Any)
         
-        print("end of demo")
+        print("\nend of demo")
     }
 }
 
@@ -51,6 +65,7 @@ class User: Mappable{
 
     func mapping(map: Map) {
         userName    <- map["name.firstname"] //Demo: nested objects
+        userName    >>> map["name"]  //Demo: different structure as input json
         userAge     <- map["age"]
         friends     <- map["friends"]
     }
@@ -106,6 +121,7 @@ class Friends: Mappable{
 
 class Player: ImmutableMappable{
     let name: String
+    let gamerName: String = "lol"
     var age: Int?
     
     required init(map: Map) throws {
@@ -113,7 +129,8 @@ class Player: ImmutableMappable{
     }
     
     func mapping(map: Map) {
-        name    >>> map["name.firstname"] //Demo: immutable
+        name    >>> map["name.realName"] //Demo: immutable >>>  & different structure from init
+        gamerName    >>> map["name.gamerName"] //Demo: extra value in json
         age     <- map["age"]
     }
 }
